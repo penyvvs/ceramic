@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Website for Ceramic soul brand" />
+		<meta name="author" content="Awesome student" />
+		<title>Ceramic soul</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<section class="promo">
+			<img src="/src/img/promo/potter.jpg" alt="potter" class="promo_potter">
+			<div class="container">
+				<div class="header">
+					<div class="header_top">
+						<div class="burger"><span></span><span></span><span></span></div>
+						<a href="" class="header_logo">
+							<img src="/src/logo/logo.png" alt="logo">
+						</a>
+						<div class="header_icons">
+							<a href="#"><span class="icon-search"></span></a>
+							<a href="#"><span class="icon-shopping-bag"></span></a>
+						</div>
+					</div>
+					<nav class="header_nav">
+						<ul>
+							<li><a href="#" class="header_link">catalog</a></li>
+							<li><a href="#" class="header_link">blog</a></li>
+							<li><a href="#" class="header_link">about</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="promo_wrapper">
+					<h1 class="title_h1-italic promo_title">Make your dream come true <br> or decorate your home</h1>
+					<div class="promo_cta">
+						<img src="/src/img/promo/ceramic-vase.jpg" alt="vase" class="promo_img">
+						<button class="btn_default promo_btn">shop now</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="activities">
+			<div class="container">
+				<h2 class="title_h2">create or buy</h2>
+				<div class="pure-g activities_wrapper">
+					<div class="pure-u-1 pure-u-xl-2-5 activities_col">
+						<h3 class="title_h3">our store</h3>
+						<img src="/src/img/about/store.jpg" alt="store" class="activities_img">
+						<p class="activities_text">Welcome to <span class="activities_text_ceramic">Ceramic Soul</span>, where each piece tells a story of craftsmanship and creativity. Our handmade ceramics are thoughtfully designed and carefully crafted, blending traditional techniques with modern aesthetics. Whether you're looking for a unique gift or a special addition to your home, our collection offers timeless pieces that bring warmth and authenticity to any space.</p>
+					</div>
+					<div class="pure-u-1 pure-u-xl-3-5 activities_col">
+						<h3 class="title_h3">our workshop</h3>
+						<img src="/src/img/about/ceramic.jpg" alt="ceramic" class="activities_img">
+						<p class="activities_text activities_text_short">At <span class="activities_text_ceramic">Ceramic Soul</span> workshop, we don’t just craft ceramics—we invite you to get hands-on and create your own unique pieces. Through our engaging masterclasses, you’ll learn traditional techniques, work with natural materials, and experience the joy of shaping clay into something truly personal.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="form">
+			<div class="container">
+				<h2 class="title_h2">get in touch</h2>
+				<div class="pure-g form_wrapper">
+					<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-2-5">
+						<img src="/src/img/form/tea.jpg" alt="tea" class="form_img">
+					</div>
+					<div class="pure-u-1 pure-u-xl-1-2 pure-u-xxl-3-5 form_block">
+						<form action="#">
+							<fieldset class="form_fieldset">
+								<div>
+									<label class="form_label" for="name">Name</label>
+									<input class="form_input" type="text" id="name" name="name" placeholder="Name">
+								</div>
+								<div>
+									<label class="form_label" for="email">Email</label>
+									<input class="form_input" type="email" id="email" name="email" placeholder="Email">
+								</div>
+							</fieldset>
+							<label class="form_label" for="question">Your question</label>
+							<textarea class="form_input form_input_textarea" name="question" id="question" placeholder="Question"></textarea>
+							
+							<label class="form_label form_checkbox" for="checkbox">
+								<input class="form_checkbox_input" type="checkbox" id="checkbox">
+								I agree with the <a href="#"> terms</a>
+							</label>
+
+							<button class="btn_send form_btn">send request</button>
+						</form>
+						<img class="form_img_vase" src="/src/img/form/vase.png" alt="vase">
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script type="module" src="/src/js/script.js"></script>
+	</body>
+</html>
