@@ -1,0 +1,135 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.footer{
+    padding: 50px 0;
+    background: $dark;
+    color: $light;
+    &_news{
+        &-descr{
+            margin-top: 40px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        form{
+            margin-top: 40px;
+        }
+        &-email{
+            width: 293px;
+            height: 32px;
+            padding: 0 0 15px 0;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid $ui-active;
+            &::placeholder{
+                font-weight: 400;
+                font-size: 14px;
+                color: $ui-active;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        &-checkbox{
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            a{
+                margin-left: 3px;
+                color: #a22dc6;
+                text-decoration: none;
+            }
+            &-input{
+                background-color: transparent;
+                margin-right: 15px;
+                width: 15px;
+                height: 15px;
+                border: 1px solid $light;
+                border-radius: 2px;
+            }
+        }
+        &_btn{
+            margin-top: 20px;
+            width: 90px;
+            border: 1px solid $light;
+            color: $light;
+        }
+    }
+    &_link{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 66px;
+        row-gap: 40px;
+        &_item{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            list-style-type: none;
+            padding: 0;
+            a{
+                text-decoration: none;
+                color: $light;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+    &_social{
+        margin-top: 40px;
+        &_icon{
+            margin-top: 40px;
+            display: flex;
+            column-gap: 10px;
+            a{
+                color: $light;
+            }
+            span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px;
+                height: 24px;
+                font-size: 22px;
+                &::before{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &_descr{
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footer{
+        &_wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            column-gap: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer{
+        &_wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        &_descr{
+            margin-top: 50px;
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .footer{
+        &_descr{
+            margin-top: 20px;
+        }
+    }
+}
