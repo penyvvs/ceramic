@@ -1,7 +1,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .works {
-    padding: 60px 0;
+    padding-top: 60px;
     &_slider {
         margin-top: 40px;
     }
@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 1920px){
     .works{
-        padding: 100px 0;
+        padding-top: 100px;
         &_slider{
             margin: 80px 85px 0 85px;
         }

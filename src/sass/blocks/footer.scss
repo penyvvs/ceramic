@@ -1,6 +1,7 @@
 @use "/src/sass/base/variables.scss" as *;
 
 .footer{
+    margin-top: 60px;
     padding: 50px 0;
     background: $dark;
     color: $light;
@@ -128,6 +129,7 @@
 
 @media screen and (min-width: 1920px) {
     .footer{
+        margin-top: 100px;
         &_descr{
             margin-top: 20px;
         }
