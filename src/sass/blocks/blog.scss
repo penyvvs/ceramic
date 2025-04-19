@@ -1,8 +1,103 @@
 @use "/src/sass/base/variables.scss" as *;
 
-.blog{
+.blog {
     margin-top: 50px;
-    &-title{
+    &_title {
         margin-top: 60px;
+    }
+    &_wrapper {
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    &_h3 {
+        text-align: left;
+    }
+    &_card {
+        border: 1px solid $dark;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+        background: $light;
+    }
+    &_data {
+        &_img{
+            max-inline-size: calc(100% + 2px);
+            width: calc(100% + 2px);
+            max-height: 350px;
+            object-fit: cover;
+            transform: translateX(-1px) translateY(-1px);
+        }
+        &_column {
+            padding: 25px 25px 0 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+    }
+    &_text {
+        margin-top: 25px;
+        padding: 0 25px 25px 25px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $dark;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .blog{
+        &_wrapper{
+            position: relative;
+            padding: 25px 25px 0 25px;
+            &::before, &::after{
+                content: '';
+                position: absolute;
+                background: $dark;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 1px;
+            }
+            &::after{
+                width: 1px;
+                height: 200px;
+            }
+        }
+        &_data{
+            &_column{
+                gap: 0;
+                justify-content: space-between;
+            }
+        }
+        &_text{
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .blog{
+        &_wrapper{
+            align-items: start;
+            gap: 25px 50px;
+        }
+        &_card{
+            width: calc(50% - 25px);
+        }
+        &_data{
+            &_img{
+                height: 240px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .blog{
+        &_title{
+            margin-top: 100px;
+        }
+        &_wrapper{
+            align-items: stretch;
+        }
     }
 }

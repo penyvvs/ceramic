@@ -33,6 +33,21 @@
     }
 }
 
+.btn_read{
+    @include button;
+    width: 145px;
+    height: 32px;
+    font-size: 14px;
+    &:hover{
+        color: $ceramic;
+        border: 1px solid $ceramic;
+    }
+    &:active, &:focus{
+        border: 1px solid $ceramic;
+        color: $dark;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .btn_default{
         transition: 0.3s all;
