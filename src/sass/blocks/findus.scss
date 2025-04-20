@@ -1,0 +1,46 @@
+.findus{
+    padding-top: 60px;
+    &_map{
+        margin-top: 60px;
+        width: 100%;
+        iframe{
+            width: 100%;
+            aspect-ratio: 1.65;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .findus{
+        &_map{
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .findus{
+        &_map{
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            iframe{
+                display: block;
+                width: 660px;
+                aspect-ratio: 1.32;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .findus{
+        padding-top: 100px;
+        &_map{
+            margin-top: 80px;
+            iframe{
+                width: 800px;
+            }
+        }
+    }
+}
